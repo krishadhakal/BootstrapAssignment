@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 60px 120px;
+  }
+  .tooltip-container {
+    width: 30%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+  }
+  .tooltip-icon {
+    font-size: 24px;
+  }
+  .tooltip-svg img {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .tooltip-background-image {
+    height: 24px;
+    width: 24px;
+    background-image: url("assets/cow.png");
+    background-size: contain;
+  }
+  
+  .tooltip-container span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .tooltip-container span::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border: 1px solid #000000;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  
+  .tooltip-container span:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .green-text:hover {
+    color: green;
+  }
+  
+  .green-text:hover::after {
+    background-color: white;
+    color: green;
+  }
+  
+  .red-text:hover {
+    color: red;
+  }
+  
+  .red-text:hover::after {
+    background-color: white;
+    color: red;
+  }
