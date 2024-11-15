@@ -1,1 +1,1 @@
-This is style guide assignment.
+This is styleguide assignment

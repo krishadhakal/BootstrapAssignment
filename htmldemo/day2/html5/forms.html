@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Keeper Application Form</title>
+</head>
+<body>
+    <header>
+        <h1>Zoo Keeper Application Form</h1>
+        <p><i>Please complete the form. Mandatory fields are marked with a <font color="red" size="5"><b>*</b></font></i></p>
+    </header>
+    
+    <form>
+        <fieldset>
+            <legend><b>CONTACT DETAILS</b></legend>
+            <table cellspacing="10" cellpadding="5">
+                <tr>
+                    <th align="left"><label for="name">Name  <font color="red" size="5"><b>*</b></font></label></th>
+                    <td>&emsp;&emsp;&emsp;<input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="telephone">Telephone</label></th>
+                    <td>&emsp;&emsp;&emsp;<input type="text" id="telephone" name="telephone"></td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="email">Email <font color="red" size="5"><b>*</b></font></label></th>
+                    <td>&emsp;&emsp;&emsp;<input type="email" id="email" name="email"></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend><b>PERSONAL INFORMATION</b></legend>
+            <table cellspacing="10" cellpadding="5">
+                <tr>
+                    <th align="left"><label for="age"><font color="red" size="5"><b>*</b></font>Age</label></th>
+                    <td>&emsp;<input type="number" id="age" name="age"></td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="gender">Gender</label></th>
+                    <td>&emsp;
+                        <select id="gender" name="gender" style="width: 164px;">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="why">When did you <br> first know you <br> wanted to be a <br> zoo-keeper?</label></th>
+                    <td>&emsp;<textarea id="why" name="why" rows="4" cols="40"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <br>
+        
+        <fieldset>
+            <legend><b>PICK YOUR FAVORITE ANIMALS</b></legend>
+            <table cellspacing="10" cellpadding="5">
+                <tr>
+                    <th align="left" style="font-weight:400;"><label><input type="checkbox" id="zebra" name="animals" value="zebra"> Zebra</label></th>
+                    <td><label><input type="checkbox" id="cat" name="animals" value="cat"> Cat</label></td>
+                    <td><label><input type="checkbox" id="anaconda" name="animals" value="anaconda"> Anaconda</label></td>
+                    <td><label><input type="checkbox" id="human" name="animals" value="human"> Human</label></td>                
+                </tr>
+                <tr>
+                    <td><label><input type="checkbox" id="elephant" name="animals" value="elephant"> Elephant</label></td>
+                    <td><label><input type="checkbox" id="wildebeest" name="animals" value="wildebeest"> Wildebeest</label></td>
+                    <td><label><input type="checkbox" id="pigeon" name="animals" value="pigeon"> Pigeon</label></td>
+                    <td><label><input type="checkbox" id="crab" name="animals" value="crab"> Crab</label></td>
+                </tr>                  
+            </table>
+        </fieldset>
+        
+        <br>
+        
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
